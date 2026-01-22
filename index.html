@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Library with 3D Books</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@spline/core@1.0.59/build/spline.umd.js"></script>
+</head>
+<body>
+    <div class="background-container">
+        <canvas id="mesh-gradient-bg"></canvas>
+    </div>
+    
+    <header class="main-header">
+        <h1>Modern Library System</h1>
+        <p>Experience books in 3D</p>
+    </header>
+    
+    <main class="main-content">
+        <div class="book-shelf">
+            <div class="book-card" data-book-id="1">
+                <div class="book-3d-container" id="book1">
+                    <!-- 3D Book will be rendered here -->
+                </div>
+                <h3>The Great Gatsby</h3>
+                <p>F. Scott Fitzgerald</p>
+                <button class="borrow-btn">Borrow Book</button>
+            </div>
+            
+            <div class="book-card" data-book-id="2">
+                <div class="book-3d-container" id="book2">
+                    <!-- 3D Book will be rendered here -->
+                </div>
+                <h3>To Kill a Mockingbird</h3>
+                <p>Harper Lee</p>
+                <button class="borrow-btn">Borrow Book</button>
+            </div>
+            
+            <div class="book-card" data-book-id="3">
+                <div class="book-3d-container" id="book3">
+                    <!-- 3D Book will be rendered here -->
+                </div>
+                <h3>1984</h3>
+                <p>George Orwell</p>
+                <button class="borrow-btn">Borrow Book</button>
+            </div>
+        </div>
+    </main>
+    
+    <div class="lottie-icons">
+        <div id="borrow-success"></div>
+        <div id="book-flight"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
